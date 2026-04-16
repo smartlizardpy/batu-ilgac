@@ -1,23 +1,51 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<meta name="description" content="Batu Ilgaç — Beşiktaş U12 futbolcusu. 2025 sezonundan fotoğraflar ve anılar." />
+		<meta property="og:title" content="Batu Ilgaç · Beşiktaş U12" />
+		<meta property="og:description" content="2025 sezonundan fotoğraflar ve anılar." />
+		<meta property="og:image" content="/batu-fotos/30e651df-907b-4e39-9d9e-590448e7f633.jpg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif&display=swap" rel="stylesheet" />
+		<title>Batu Ilgaç · Beşiktaş U12</title>
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
+<style is:global>
+	:root {
+		--ink: #0a0a0a;
+		--paper: #f5f3ee;
+		--bjk-red: #e30613;
+		--muted: #6b6b6b;
+		--line: rgba(10, 10, 10, 0.12);
 	}
+
+	* { box-sizing: border-box; }
+
+	html, body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		background: var(--paper);
+		color: var(--ink);
+		font-family: 'Inter', system-ui, -apple-system, sans-serif;
+		font-size: 17px;
+		line-height: 1.55;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	img { display: block; max-width: 100%; height: auto; }
+	a { color: inherit; text-decoration: none; }
+
+	::selection { background: var(--ink); color: var(--paper); }
 </style>
